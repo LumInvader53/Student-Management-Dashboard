@@ -5,6 +5,11 @@ const localStudents = [];
 const studentForm = document.getElementById("studentForm");
 const studentTableBody = document.getElementById("studentTableBody");
 
+/**
+ * Accepts list of Users and renders visually on screen.
+ *
+ * @param {} dataArray User table to be rendered on screen
+ */
 const renderTable = (dataArray) => {
   studentTableBody.innerHTML = "";
 
@@ -31,6 +36,10 @@ const renderTable = (dataArray) => {
   });
 };
 
+/**
+ * Adds new user to list and database and renders it on screen.
+ *
+ */
 studentForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -55,6 +64,10 @@ studentForm.addEventListener("submit", (event) => {
   studentForm.firstName.focus();
 });
 
+/**
+ * Initializes database of Users and renders it on screen.
+ *
+ */
 const initApp = () => {
   localStudents.push(...getStudentsAPI());
   console.log(localStudents);
