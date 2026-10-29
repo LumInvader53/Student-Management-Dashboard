@@ -1,8 +1,8 @@
 import User from "./user.js";
 
 const mockStudentDb = [];
-mockStudentDb.push(new User("Jamel", "Hadjirasul", "jamel@email.com"));
-mockStudentDb.push(new User("Karl", "Gaitera", "karl@email.com"));
+// mockStudentDb.push(new User("Jamel", "Hadjirasul", "jamel@email.com"));
+// mockStudentDb.push(new User("Karl", "Gaitera", "karl@email.com"));
 
 export function getStudentsAPI() {
   return mockStudentDb;

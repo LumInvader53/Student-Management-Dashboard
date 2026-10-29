@@ -4,6 +4,16 @@ console.log("EXERCISE 1 \n");
 
 console.log("Test Case 1");
 console.log("Initial DB State: ");
+addStudentsAPI({
+  firstName: "Jamel",
+  lastName: "Hadjirasul",
+  email: "jamel@email.com",
+});
+addStudentsAPI({
+  firstName: "Karl",
+  lastName: "Gaitera",
+  email: "karl@email.com",
+});
 console.log(getStudentsAPI());
 
 console.log("\n\nTest Case 2");
